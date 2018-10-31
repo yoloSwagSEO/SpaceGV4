@@ -53,10 +53,10 @@ class MajRessources
         $this->metal = $this->planet->metal;
 
         $basicProduction = (30 * 1 * pow(1.1,1)) * $this->planet->modifMetal;
-        $factorPr
+        //todo
 
 
-        $productionHoraire = () * $this->GlobalEnergyFactor;
+        $productionHoraire = $basicProduction * $this->GlobalEnergyFactor;
         $ProductionSeconde = round($productionHoraire/3600,4);
 
         $secondToUpdate = $this->time - $this->planet->lastUpdate;
